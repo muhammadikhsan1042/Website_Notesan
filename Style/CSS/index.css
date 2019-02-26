@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css?family=Lora");
+@import url("https://fonts.googleapis.com/css?family=Acme");
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  background-image: url("/Assets/background.jpg");
+  background-size: cover;
+}
+header .welcome-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .welcome-page .welcome-page-wrap {
+  border: 1px solid black;
+  width: 600px;
+  height: 240px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .welcome-page .welcome-page-wrap h1 {
+  font-size: 3.75em;
+}
+header .welcome-page .welcome-page-wrap h2 {
+  font-size: 2.25em;
+}
+header .welcome-page .welcome-page-wrap form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+header .welcome-page .welcome-page-wrap form div {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  width: 360px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 2px;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+header .welcome-page .welcome-page-wrap form div select {
+  font-family: "Lora", serif;
+  font-size: 1.5em;
+  background-color: inherit;
+  border: none;
+  width: 65px;
+  height: 40px;
+  margin-right: 5px;
+}
+header .welcome-page .welcome-page-wrap form div select option {
+  font-size: 1em;
+}
+header .welcome-page .welcome-page-wrap form div select:focus {
+  outline: inherit;
+}
+header .welcome-page .welcome-page-wrap form div input[type=text] {
+  font-family: "Lora", serif;
+  font-size: 1.5em;
+  width: 280px;
+  border: none;
+  background-color: inherit;
+}
+header .welcome-page .welcome-page-wrap form div input[type=text] {
+  outline: inherit;
+}
+header .welcome-page .welcome-page-wrap form input[type=submit] {
+  font-size: 1.3em;
+  font-family: "Lora", serif;
+  background-color: inherit;
+  border: 2px solid black;
+  width: 60px;
+  height: 40px;
+  border-radius: 2px;
+}
+header .welcome-page .welcome-page-wrap form input[type=submit]:hover {
+  cursor: pointer;
+}
+header .header-content {
+  width: 100%;
+  height: 100%;
+}
+header .header-content .header-content-wrap {
+  width: 100%;
+  height: 100%;
+}
+header .header-content .header-content-wrap .header-main-text {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 20%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+header .header-content .header-content-wrap .header-navigation-wrap {
+  width: 100%;
+  height: 7%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+header .header-content .header-content-wrap .header-navigation-wrap .header-navigation {
+  font-weight: bolder;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+  margin-left: 10px;
+}
+header .header-content .header-content-wrap .header-navigation-wrap .header-navigation:hover {
+  cursor: pointer;
+  border-bottom-color: aqua;
+}
+header .header-content .header-content-wrap .header-content-text {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-content .header-content-wrap .header-content-text .header-text-wrap {
+  text-align: center;
+}
+header .header-content .header-content-wrap .header-content-text .header-text-wrap .header-text-arabic {
+  font-size: 3em;
+  font-weight: 900;
+}
+header .header-content .header-content-wrap .header-content-text .header-text-wrap .header-text-en, header .header-content .header-content-wrap .header-content-text .header-text-wrap .header-text-qs {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+header .header-content .header-content-wrap .header-content-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+header .header-content .header-content-wrap .header-content-button div {
+  margin: 0 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 900;
+  width: 200px;
+  padding: 10px 0;
+  transition: background-color 0.5s, color 0.5s;
+}
+header .header-content .header-content-wrap .header-content-button div:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+header .header-content .header-content-wrap .header-content-connect {
+  width: 100%;
+}
+header .header-content .header-content-wrap .header-content-connect .header-connect-text {
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+header .header-content .header-content-wrap .header-content-connect .header-connect-text span {
+  font-size: 1.5em;
+}
+header .header-content .header-content-wrap .header-content-connect .header-connect-icon {
+  display: flex;
+  justify-content: center;
+}
+header .header-content .header-content-wrap .header-content-connect .header-connect-icon .connect-icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+header .header-content .header-content-wrap .header-content-connect .header-connect-icon .connect-icon:nth-child(1):hover {
+  cursor: pointer;
+  background-color: #ff4040;
+}
+header .header-content .header-content-wrap .header-content-connect .header-connect-icon .connect-icon:nth-child(2):hover {
+  cursor: pointer;
+  background-color: #0047ff;
+}
+header .header-content .header-content-wrap .header-content-connect .header-connect-icon .connect-icon:nth-child(3):hover {
+  cursor: pointer;
+  background-color: #00b9e2;
+}
+header .header-content .header-content-wrap .header-content-connect .header-connect-icon .connect-icon:nth-child(4):hover {
+  cursor: pointer;
+  background-image: radial-gradient(yellow, #ff970e, #ff3306, #8f008d);
+}
+header .header-navigation-fixed {
+  display: none;
+  background-color: black;
+  position: fixed;
+  padding: 10px 120px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+header .header-navigation-fixed .header-navigation-icon {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .header-navigation-fixed .header-navigation-icon .navigation-text {
+  margin-left: 10px;
+  color: white;
+}
+header .header-navigation-fixed .header-navigation-icon .navigation-text span {
+  color: #ffd067;
+}
+header .header-navigation-fixed .header-navigation-wrap {
+  width: 70%;
+  height: 20%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+header .header-navigation-fixed .header-navigation-wrap .header-navigation {
+  color: white;
+  font-weight: bolder;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border-bottom: 2px solid white;
+  margin-left: 10px;
+}
+header .header-navigation-fixed .header-navigation-wrap .header-navigation:hover {
+  cursor: pointer;
+  border-bottom-color: aqua !important;
+}
+
+main {
+  width: 100%;
+}
+main .profile-page {
+  opacity: 0;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .profile-page .main-tag {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+main .profile-page .main-tag .tag-icon {
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+main .profile-page .main-tag .tag-name {
+  margin: 0 5px;
+}
+main .profile-page .main-tag .tag-name h1 {
+  font-size: 3em;
+}
+main .profile-page .profile-page-wrap {
+  z-index: -1;
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 800px;
+  height: 320px;
+  display: flex;
+}
+main .profile-page .profile-page-wrap .profile-image {
+  width: 300px;
+  height: 320px;
+}
+main .profile-page .profile-page-wrap .profile-about {
+  height: 100%;
+  width: 500px;
+}
+main .profile-page .profile-page-wrap .profile-about .profile-about-data {
+  padding: 20px 30px;
+  height: 270px;
+  width: 100%;
+  box-sizing: border-box;
+}
+main .profile-page .profile-page-wrap .profile-about .profile-about-data .profile-about-data-name {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 4px solid rgba(175, 175, 175, 0.7);
+}
+main .profile-page .profile-page-wrap .profile-about .profile-about-data .profile-about-data-name h3 {
+  font-size: 1.7em;
+}
+main .profile-page .profile-page-wrap .profile-about .profile-about-data .profile-about-data-name h1 {
+  font-size: 2.7em;
+}
+main .profile-page .profile-page-wrap .profile-about .profile-about-data .profile-about-data-information tr td {
+  font-size: 1.25em;
+  font-family: "Acme", sans-serif;
+}
+main .profile-page .profile-page-wrap .profile-about .profile-about-connect {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background-color: #0094ff;
+}
+main .profile-page .profile-page-wrap .profile-about .profile-about-connect .connect-icon {
+  height: 50px;
+  width: 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .profile-page .profile-page-wrap .profile-about .profile-about-connect .connect-icon img {
+  width: 30px;
+}
+main .profile-page .profile-page-wrap .profile-about .profile-about-connect .connect-icon:hover {
+  cursor: pointer;
+}
+main .education-page {
+  background-color: cadetblue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+main .education-page .main-tag {
+  opacity: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+main .education-page .main-tag .tag-icon {
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+main .education-page .main-tag .tag-name {
+  margin: 0 5px;
+}
+main .education-page .main-tag .tag-name h1 {
+  color: white;
+  font-size: 3em;
+}
+main .education-page .education-page-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .education-page .education-page-wrap .education-information {
+  opacity: 0;
+  width: 35%;
+  margin: 10px 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px 40px;
+}
+main .education-page .education-page-wrap .education-information .education-information-header {
+  border-bottom: 2px solid #c3c3c3;
+  padding-bottom: 10px;
+}
+main .education-page .education-page-wrap .education-information .education-information-header h1 {
+  font-size: 2em;
+}
+main .education-page .education-page-wrap .education-information .education-information-header h2 {
+  font-size: 1.5em;
+}
+main .education-page .education-page-wrap .education-information .education-information-main {
+  margin-top: 10px;
+}
+main .education-page .education-page-wrap .education-information .education-information-main p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+main .skill-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+main .skill-page .main-tag {
+  opacity: 0;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+main .skill-page .main-tag .tag-icon {
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+main .skill-page .main-tag .tag-name {
+  margin: 0 5px;
+}
+main .skill-page .main-tag .tag-name h1 {
+  font-size: 3em;
+}
+main .skill-page .skill-page-wrap {
+  display: flex;
+}
+main .skill-page .skill-page-wrap .skill-item {
+  z-index: -1;
+  opacity: 0;
+  position: relative;
+  margin: 0 25px;
+}
+main .skill-page .skill-page-wrap .skill-item span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+main .project-page {
+  background-color: cadetblue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+main .project-page .main-tag {
+  opacity: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+main .project-page .main-tag .tag-icon {
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+main .project-page .main-tag .tag-name {
+  margin: 0 5px;
+}
+main .project-page .main-tag .tag-name h1 {
+  color: white;
+  font-size: 3em;
+}
+main .project-page .project-page-wrap {
+  opacity: 0;
+  padding-left: 30px;
+  width: 830px;
+  height: 320px;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  box-sizing: border-box;
+}
+main .project-page .project-page-wrap .project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 320px;
+}
+main .project-page .project-page-wrap .project-list {
+  box-sizing: border-box;
+  width: 480px;
+  height: 320px;
+  padding: 20px 30px;
+  overflow: hidden;
+}
+main .project-page .project-page-wrap .project-list .project-list-header {
+  padding: 5px 5px;
+  border-bottom: 2px solid #d7d7d7;
+}
+main .project-page .project-page-wrap .project-list .project-list-header h1 {
+  font-size: 2em;
+}
+main .project-page .project-page-wrap .project-list .project-list-item {
+  margin-top: 10px;
+  box-sizing: border-box;
+  height: 217px;
+  border: 1px solid black;
+}
+main .project-page .project-page-wrap .project-list .project-list-item ul {
+  margin-right: -100px;
+  padding-right: 100px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+main .project-page .project-page-wrap .project-list .project-list-item ul li {
+  box-sizing: border-box;
+  width: 418px;
+  padding: 5px 20px;
+  font-size: 1.1em;
+  list-style: none;
+}
+main .project-page .project-page-wrap .project-list .project-list-item ul li:nth-child(1) {
+  background-color: #d0d0d0;
+}
+main .project-page .project-page-wrap .project-list .project-list-item ul li:hover {
+  cursor: pointer;
+}
+
+footer .aboutme-page {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+footer .aboutme-page .main-tag {
+  display: flex;
+  align-items: center;
+}
+footer .aboutme-page .main-tag .tag-name h1 {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+footer .aboutme-page .main-tag .tag-name h2 {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=index.css.map */
